@@ -4,12 +4,12 @@
 public class Task {
 
     private String title;
-    private String descripion;
+    private String description;
     private Boolean isCompleted;
 
-    public Task (String title, String descripion){
+    public Task (String title, String description){
         this.title = title;
-        this.descripion = descripion;
+        this.description = description;
         this.isCompleted = false;
     }
     public void markAsCompleted(){
@@ -17,6 +17,6 @@ public class Task {
     }
     @Override
     public String toString(){
-        return title + " - " + (isCompleted ?  "Erledigt" : "Nicht erledigt");
+        return title + " - " + description + " - " + (isCompleted ?  "Erledigt" : "Nicht erledigt");
     }
 }
