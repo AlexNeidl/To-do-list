@@ -2,30 +2,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TaskManager {
-    private List<Task> aufgabenListe;
+    private List<Task> taskslist;
 
     public TaskManager() {
-        aufgabenListe = new ArrayList<>();
+        taskslist = new ArrayList<>();
     }
 
     public void addTask(Task task) {
-        aufgabenListe.add(task);
+        taskslist.add(task);
     }
 
     public void editTask(int index, Task task) {
-        if (index >= 0 && index < aufgabenListe.size()) {
-            aufgabenListe.set(index, task);
+        if (index >= 0 && index < taskslist.size()) {
+            taskslist.set(index, task);
         }
     }
 
     public void deleteTask(int index, Task task) {
-        if (index >= 0 && index < aufgabenListe.size()) {
-            aufgabenListe.remove(index);
+        if (index >= 0 && index < taskslist.size()) {
+            taskslist.remove(index);
         }
 
     }
 
-    public List<Task> getAufgabenListe() {
-        return aufgabenListe;
+    public List<Task> getTaskslist() {
+        return taskslist;
     }
 }
